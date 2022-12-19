@@ -1,0 +1,10 @@
+{
+  "domain": "aten_pe",
+  "name": "ATEN Rack PDU",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/aten_pe",
+  "requirements": ["atenpdu==0.4.0"],
+  "codeowners": ["@mtdcr"],
+  "version": "0.4.0",
+  "iot_class": "local_polling"
+}
