@@ -109,6 +109,8 @@ class AtenSensorEntity(SensorEntity):
 
     async def async_update(self) -> None:
         """Process update from entity."""
-        self._attr_native_value = await self._device.getAttribute(
+        value = await self._device.getAttribute(
             self.entity_description.key, self._outlet
         )
+        if value != b"not-support":
+            self._attr_native_value = value
