@@ -34,7 +34,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     )
 
     try:
-        await hass.async_add_executor_job(dev.initialize)
+        await dev.initialize()
         mac = await dev.deviceMAC()
         name = await dev.deviceName()
         model = await dev.modelName()
