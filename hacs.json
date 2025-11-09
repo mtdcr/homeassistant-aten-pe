@@ -1,5 +1,5 @@
 {
     "name": "ATEN Rack PDU",
-    "homeassistant": "2025.8.0",
+    "homeassistant": "2025.11.0",
     "render_readme": true
 }
